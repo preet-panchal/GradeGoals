@@ -1,0 +1,273 @@
+
+/* importing google font: Raleway; */
+@import url('https://fonts.googleapis.com/css?family=Raleway:');
+
+/****** GENERAL ******/
+body {
+	margin: auto; 
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px; 	
+}
+
+header {
+	text-align: center; 
+	background-color: #FFE4EC; 
+}
+
+
+/****** NAVBAR ******/
+#navbar {
+	overflow: hidden; 
+	text-align: center;
+	width: 100%; 
+	padding: 10px;
+	background-color: #FFE4EC; 
+}
+#navbar a {
+	display: inline-block;
+	text-align: center; 
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 10px 30px; 
+	font-size: 16px; 
+	transition: .5s; 
+}
+#navbar a:hover {
+	background-color: #FFBF00;
+	color: black;
+}
+#navbar a.active{
+	background-color: #C70039;
+	color: white;
+}
+#navbar a:hover,
+#navbar a.active {
+	box-shadow: inset 0 5px 10px rgba(0,0,0,.1), 0 2px 5px rgba(0,0,0,.5);
+}
+
+/* added class for js -- sticky navbar */
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+/* main content container for all pages */
+.content {
+	width: 80%;
+	margin: auto; 
+	padding: 0;
+	text-align: justify;
+	font-size: 16px;	
+}
+
+.home-head {
+	overflow: hidden;
+	width: 65%;
+	margin: auto;
+	text-align: center; 
+	font-size: 14px;
+}
+
+.form-label {
+	width: 10%;
+	text-align: left;
+	margin-top: 6px;
+	float: left;
+}
+
+
+/* steps 1-3 form questions styling */
+.course-info input[type=text],
+.course-info input[type=number] {
+	border: 3px solid #C70039;
+	padding: 5px 10px;
+	font-size: 13px;
+	transition: .5s;
+	box-shadow: inset 0 5px 10px rgba(0,0,0,.1), 0 2px 5px rgba(0,0,0,.5);	
+}
+.course-info input[type=text]:focus,
+.course-info input[type=number]:focus {
+	border: 3px solid #FFBF00;
+}
+
+.course-info input[type=text] {
+	width: 30%;
+}
+.course-info input[type=number] {
+	width: 5%;
+}
+
+
+/* table headings' rows adjustment */
+.r1 {
+	width: 18%;
+}
+.r2,
+.r3, 
+.r4 {
+	width: 10%;
+}
+
+/* represents the entire form-table on home page */
+.flex-table1 {
+	display: flex;
+	flex-wrap: nowrap;
+	position: relative;
+	overflow: hidden;
+}
+.flex-head {
+	border: 2px solid #999; 
+	text-align: center;
+	padding: 5px;
+	box-shadow: inset 0 5px 5px rgba(0,0,0,.1), 0 2px 5px rgba(0,0,0,.5);
+}
+
+.form-result,
+.rows {
+	padding: 5px;
+}
+
+
+/* assessment rows styling */
+.rows input[type=text],
+.rows input[type=number] {
+	border: 3px solid #C70039;
+	padding: 5px 10px;
+	font-size: 13px;
+	transition: .5s;
+	box-shadow: inset 0 5px 10px rgba(0,0,0,.1), 0 2px 5px rgba(0,0,0,.5);
+}
+.rows input[type=text]:focus,
+.rows input[type=number]:focus {
+	border: 3px solid #FFBF00;
+}
+
+.rows input[type=text] {
+	width: 16.5%;
+}
+.rows input[type=number] {
+	width: 8.8%;
+}
+
+
+/* result rows adjustment */
+.rr1 {
+	width: 18%;
+	border-style: none;
+	border-color: white; 
+	box-shadow: inset 0 5px 10px rgba(0,0,0,.1), 0 2px 5px rgba(0,0,0,.5);
+}
+.rr2,
+.rr3, 
+.rr4 {
+	width: 10.1%;
+	border-style: none;
+	border-color: white; 
+	box-shadow: inset 0 5px 10px rgba(0,0,0,.1), 0 2px 5px rgba(0,0,0,.5);
+}
+
+
+/* calculate button on home page */
+.course1 input[type="submit"] {
+	border: 1px solid rgba(10, 180, 180, 1);
+	background: rgba(20, 20, 20, .6);
+	box-shadow: inset 0 5px 10px rgba(0,0,0,.1), 0 2px 5px rgba(0,0,0,.5);
+	font-size: 18px;
+	color: white;
+	margin-top: 20px;
+	padding: 10px 50px;
+	cursor: pointer;
+	transition: .5s;
+}
+.course1 input[type="submit"]:hover {
+	background: #C70039;
+ 	color: white;
+ 	box-shadow: inset 0 5px 10px rgba(0,0,0,.1), 0 2px 5px rgba(0,0,0,.5);
+    padding: 10px 80px;
+}
+
+
+
+/****** CONTACT PAGE ******/
+.feedbackForm {
+	width: 60%;
+	margin: auto;
+	box-sizing: border-box;
+	box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
+	padding: 30px 50px; 
+	background: rgba(20, 40, 40, .8);
+	color: white;
+	transition: .5s;
+}
+
+#experience {
+	text-align: center; 
+}
+
+.form-questions ul {
+	list-style: none; 
+}
+
+.form-questions input[type="name"],
+.form-questions input[type="email"],
+.form-questions textarea {
+	width: 90%;
+	margin-bottom: 16px;
+	margin-top: 7px;
+	padding: 10px;
+	border: 3px solid #C70039;
+  	border-top: none;
+  	border-left: none;
+  	border-right: none; 
+	outline: none;
+	box-shadow: inset 0 5px 10px rgba(0,0,0,.1), 0 2px 5px rgba(0,0,0,.5); 
+	text-align: left; 	
+	background: transparent;
+  	color: #FFBF00; 
+}
+.form-questions input[type="name"]:focus,
+.form-questions input[type="email"]:focus,
+.form-questions textarea:focus {
+	border: 3px solid #FFBF00;
+} 
+
+#center-btn {
+	text-align: center;
+	padding-right: 50px;
+}
+
+#submitFeedback-btn {
+	border: 1px solid rgba(10, 180, 180, 1);
+	background: rgba(20, 20, 20, .6);
+	box-shadow: inset 0 5px 10px rgba(0,0,0,.1), 0 2px 5px rgba(0,0,0,.5);
+	font-size: 18px;
+	color: white;
+	margin-top: 20px;
+	padding: 10px 50px;
+	cursor: pointer;
+	transition: .5s;
+}
+ #submitFeedback-btn:hover {
+ 	background: #C70039;
+ 	color: white;
+ 	box-shadow: inset 0 5px 10px rgba(0,0,0,.1), 0 2px 5px rgba(0,0,0,.5);
+    padding: 10px 80px;
+}
+
+
+
+/****** FOOTER ******/
+#main-footer {
+	overflow: hidden;
+	background: black;
+	width: 100%;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	margin-top: 50px;
+	position: relative;
+}
+.foot-text {
+	color: #F9E085;
+}
