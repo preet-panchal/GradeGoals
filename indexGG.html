@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>GRADE GOALS - Home</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" >
+	<link type="image/png" rel="icon" href="static/images/GG-icon.png" >
+	<link type="text/css" rel="stylesheet" href="static/indexGG.css" >
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<a href="indexGG.html"><img src="static/images/GG-logo.png" width="300px" height="150px"></a>
+		</div>
+	</header>
+
+	<div id="navbar">
+		<a class="active"><strong>Home</strong></a>
+		<a href="aboutGG.html"><strong>About</strong></a>
+		<a href="contactGG.html"><strong>Contact</strong></a>
+	</div>
+
+	<div id="content" class="content">
+
+		<div class="temp1"></div>	
+
+		<div class="home-head">
+			<br>
+			<h1>WELCOME TO GRADE GOALS!</h1>
+			<h3><em>This is a simple grade calculator that allows you to set your 
+			personal grade goal in a course and calculates how much you will need 
+			for each assessment to achieve your grade goal in the course.</em></h3>
+		</div>
+		<hr>
+		<h3>Just 4 Simple Steps:</h3>
+		<ol>
+			<li>Enter course name.</li>
+			<li>Enter the number of assessments in the course.</li>
+			<li>Enter grade goal in the course (out of 100%).</li>
+			<li>Fill out the table with table below as best as possible.</li>
+			<li>Click Calculate!</li>
+		</ol>
+		<br>
+
+		<section class="grade" id="grade">
+		<div class="outerbox" id="outerbox">
+			<div class="innerbox" id="innerbox">
+				<div class="course-info">
+					<form class="userqa1" id="userqa">
+						<!--<p><strong>Enter course name/code:</strong></p>-->
+						<label class="form-label" for="courseName"><strong>Course Name:</strong></label>
+						<input class="form-control" id="courseName" type="text" placeholder="Enter course name..." />
+						<p><strong>Enter the number of assessments (rows) are in this course?</strong></p>
+						<input class="a1 form-control" id="a1" type="number" value="5"  min="3" max="25" placeholder="5" />
+					</form>
+				</div>
+
+				<form class="course1" id="course1">	
+					<div class="course-info">
+						<p><strong>My Grade Goal in this course (%):</strong></p>
+						<input class="e1 form-control" id="e1" type="number" step=".01" value="85" min="35" max="110" placeholder="85" />	
+					</div>
+
+					<br>	
+
+					<div class="flex-table1" id="flex-table">
+						<div class="flex-head r1" id="flex-head r1"><strong>Assessment Name</strong></div>
+						<div class="flex-head r2" id="flex-head r2"><strong>Assessment Weight (%)</strong></div>
+						<div class="flex-head r3" id="flex-head r3"><strong>Marks IF Received</strong></div>
+						<div class="flex-head r4" id="flex-head r4"><strong>Marks Needed</strong></div>
+						<div hidden class="flex-head r5" id="flex-head r5">Temp</div>
+					</div>
+
+					<div class="rows"></div>
+
+					<div class="flex-table" id="flex-table">
+						<div class="row" id="row">
+							<input class="rr1 form-result" id="rr1" value="TOTAL=" readonly="readonly"/>
+							<input class="rr2 form-result" id="rr2" type="number" step=".01" readonly="readonly"/>
+							<input class="rr3 form-result" id="rr3" type="number" step=".01" readonly="readonly"/>
+							<input class="rr4 form-result" id="rr4" type="number" step=".01" readonly="readonly"/>
+							<input hidden class="rr5 form-control" id="rr5" type="number" step=".01" readonly="readonly"/>
+						</div>
+					</div>
+					<br>
+
+					<input type="submit" name="submit" value="CALCULATE" onclick=""/>
+				</form>
+			</div>
+		</div>	
+		</section>
+
+	</div>
+
+
+	<!-- FOOTER --> 
+	<footer id="main-footer">
+		<p>Copyright &copy 2019; <strong><a href="indexGG.html" class="foot-text">GRADE GOALS</a></p></strong>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="static/js/mainGG.js"></script>
+	<script type="text/javascript" src="static/js/stickyNavGG.js"></script>
+</body>
+</html>
